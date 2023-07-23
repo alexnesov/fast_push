@@ -16,3 +16,6 @@ aws s3 sync build/ s3://project-based-virginia
 
 echo "Invalidating CloudFront cache for the distribution"
 aws cloudfront create-invalidation --distribution-id EU1T9KFHB6UUY --paths "/*"
+
+echo "Opening Google Chrome in incognito mode with the project URL"
+google-chrome --incognito "http://project-based.io"
